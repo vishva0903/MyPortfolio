@@ -56,12 +56,19 @@ body {
     justify-content: space-between;
     height: 100vh;
     background: #021526;
-    /* background:  url(assets/vishvaprofilepic.jpg) no-repeat; */
     background-size: cover;
     background-position: center;
     display: flex;
     align-items: center;
     padding: 70px 10% 0;
+}
+
+.profile{
+    padding: 20px;
+}
+
+.profile img{
+    border: 5px solid #0ef;
 }
 
 .home-content {
