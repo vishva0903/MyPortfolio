@@ -300,6 +300,7 @@ section {
 
 .Technical-bars .bar {
     margin-top: 40px 0;
+    padding: 1px;
 }
 
 .Technical-bars .bar:first-child {
@@ -349,35 +350,33 @@ section {
 }
 
 
-.progress-line .html span {
+.progress-line.html span {
     width: 90%;
 }
 
-.progress-line .css span {
+.progress-line.css span {
     width: 90%;
 }
 
-.progress-line .javascript span {
+.progress-line.javascript span {
     width: 85%;
 }
 
-.progress-line .react span {
+.progress-line.react span {
     width: 85%;
 }
 
-.progress-line .nodejs span {
+.progress-line.nodejs span {
     width: 85%;
 }
 
-.progress-line .express span {
+.progress-line.express span {
     width: 85%;
 }
 
-.progress-line .mongoDB span {
+.progress-line.mongoDB span {
     width: 90%;
 }
-
-/* check above status bar for skills not working  */
 
 .progress-line span::after {
     position: absolute;
@@ -392,31 +391,31 @@ section {
     opacity: 0;
 }
 
-.progress-line .html span::after {
+.progress-line.html span::after {
     content: "90%";
 }
 
-.progress-line .css span::after {
+.progress-line.css span::after {
     content: "90%";
 }
 
-.progress-line .javascript span::after {
+.progress-line.javascript span::after {
     content: "85%";
 }
 
-.progress-line .react span::after {
+.progress-line.react span::after {
     content: "85%";
 }
 
-.progress-line .nodejs span::after {
+.progress-line.nodejs span::after {
     content: "85%";
 }
 
-.progress-line .express span::after {
+.progress-line.express span::after {
     content: "85%";
 }
 
-.progress-line .mongoDB span::after {
+.progress-line.mongoDB span::after {
     content: "90%";
 }
 
@@ -465,6 +464,94 @@ section {
     height: 160px;
 }
 
+.radial-bars .radial-bar .progress-bar {
+    stroke-width: 10;
+    stop-color: black;
+    fill: transparent;
+    stroke-dasharray: 502;
+    stroke-dashoffset: 502;
+    stroke-linecap: round;
+    animation: animate-bar 1s linear forwards;
+}
+
+@keyframes animate-bar {
+    100% {
+        stroke-dashoffset: -1;
+    }
+}
+
+.path {
+    stroke-width: 5;
+    stroke: #0ef;
+    fill: transparent;
+    stroke-dasharray: 502;
+    stroke-dashoffset: 502;
+    stroke-linecap: round;
+}
+
+.path-1 {
+    animation: animate-path1 1s 1s linear forwards;
+}
+
+.path-2 {
+    animation: animate-path2 1s 1s linear forwards;
+}
+
+.path-3 {
+    animation: animate-path3 1s 1s linear forwards;
+}
+
+.path-4 {
+    animation: animate-path4 1s 1s linear forwards;
+}
+
+@keyframes animate-path1 {
+    100% {
+        stroke-dashoffset: 50;
+    }
+}
+
+@keyframes animate-path2 {
+    100% {
+        stroke-dashoffset: 175;
+    }
+}
+
+@keyframes animate-path3 {
+    100% {
+        stroke-dashoffset: 125;
+    }
+}
+
+@keyframes animate-path4 {
+    100% {
+        stroke-dashoffset: 75;
+    }
+}
+
+.radial-bar .percentage {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 17px;
+    font-weight: 500;
+    animation: showText 0.5s 1s linear forwards;
+    opacity: 0;
+}
+
+.radial-bar .text{
+    width: 100%;
+    position: absolute;
+    text-align: center;
+    left: 50%;
+    bottom: -5px;
+    transform: translateX(-50px);
+    font-size: 17px;
+    font-weight: 500;
+    animation: showText 0.5s 1s linear forwards;
+    opacity: 0;
+}
 
 
 
