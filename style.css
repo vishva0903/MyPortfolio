@@ -3,6 +3,7 @@
     padding: 0;
     font-family: "poppins", sans-serif;
     box-sizing: border-box;
+    scroll-behavior: smooth;
 }
 
 body {
@@ -190,7 +191,7 @@ body {
 }
 
 .container {
-    padding: 90px;
+    padding: 100px;
 }
 
 .sub-title {
@@ -274,11 +275,6 @@ body {
     transform: translateY(-10px);
 }
 
-section {
-    display: flex;
-    flex-wrap: wrap;
-}
-
 .container1 {
     width: 600px;
     height: 500px;
@@ -299,8 +295,7 @@ section {
 }
 
 .Technical-bars .bar {
-    margin-top: 40px 0;
-    padding: 1px;
+    margin: 20px 0;
 }
 
 .Technical-bars .bar:first-child {
@@ -481,7 +476,7 @@ section {
 }
 
 .path {
-    stroke-width: 5;
+    stroke-width: 10;
     stroke: #0ef;
     fill: transparent;
     stroke-dasharray: 502;
@@ -494,15 +489,15 @@ section {
 }
 
 .path-2 {
-    animation: animate-path2 1s 1s linear forwards;
+    animation: animate-path1 1s 1s linear forwards;
 }
 
 .path-3 {
-    animation: animate-path3 1s 1s linear forwards;
+    animation: animate-path1 1s 1s linear forwards;
 }
 
 .path-4 {
-    animation: animate-path4 1s 1s linear forwards;
+    animation: animate-path1 1s 1s linear forwards;
 }
 
 @keyframes animate-path1 {
@@ -511,19 +506,19 @@ section {
     }
 }
 
-@keyframes animate-path2 {
+@keyframes animate-path12 {
     100% {
         stroke-dashoffset: 175;
     }
 }
 
-@keyframes animate-path3 {
+@keyframes animate-path1 {
     100% {
         stroke-dashoffset: 125;
     }
 }
 
-@keyframes animate-path4 {
+@keyframes animate-path1 {
     100% {
         stroke-dashoffset: 75;
     }
@@ -546,7 +541,7 @@ section {
     text-align: center;
     left: 50%;
     bottom: -5px;
-    transform: translateX(-50px);
+    transform: translateX(-50%);
     font-size: 17px;
     font-weight: 500;
     animation: showText 0.5s 1s linear forwards;
