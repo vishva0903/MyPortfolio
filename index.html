@@ -14,6 +14,8 @@
     <header class="header">
         <a href="#" class="logo">Portfolio</a>
 
+        <i class='bx bx-menu' id="menu-icon"></i>
+
         <nav class="navbar">
             <a href="#home" style="--i:1" class="active">Home</a>
             <a href="#about" style="--i:2">About</a>
@@ -22,7 +24,7 @@
             <a href="#contact" style="--i:5">Contact</a>
         </nav>
     </header>
-    <section class="home">
+    <section class="home" id="home">
         <div class="home-content">
             <h3>Hello, It's Me</h3>
             <h1>Vishva K</h1>
@@ -39,14 +41,17 @@
             <a href="#" class="btn-box">More About Me</a>
         </div>
         <div class="profile">
-            <img src="assets/Vishva.png" style="border-radius: 100%; margin-left: 100px;" width="70%" height="70%" />
+            <img src="assets/Vishva.png" style="border-radius: 100%;" width="70%" height="70%" />
         </div>
 
     </section>
 
     <section class="about" id="about">
+        <div class="profile">
+            <img src="assets/Vishva.png" style="border-radius: 100%;" width="70%" height="70%" />
+        </div>
         <div class="about-text">
-            <h2>About <span>Me</span></h2>
+            <h2 class="heading">About <span>Me</span></h2>
             <h4>Full Stack Developer</h4>
             <p>Hello! I'm Vishva, a passionate Full Stack Developer with one year of experience specializing in the MERN
                 stack (MongoDB, Express.js, React, and Node.js).
@@ -67,41 +72,41 @@
 
     <section>
         <div class="services" id="services">
-            <div class="container">
-                <h1 class="sub-title">My <span>Services</span></h1>
-                <div class="services-list">
-                    <div>
-                        <i class="bx bx-code" style='color: #00eeff;'></i>
-                        <h2>Website Development</h2>
-                        <p>I offer comprehensive website development services, creating responsive and user-friendly
-                            websites that cater to your specific needs. From design to deployment, I ensure a seamless
-                            experience, leveraging the latest technologies and best practices to deliver high-quality,
-                            scalable websites.
-                        </p>
-                        <a href="#" class="read">Read More</a>
-                    </div>
-                    <div>
-                        <i class='bx bx-code-alt' style='color:#00eeff'></i>
-                        <h2>Frontend Development</h2>
-                        <p>Transform your ideas into dynamic web applications with seamless user experiences. Utilizing
-                            the latest technologies in front-end development, I build responsive and interactive web
-                            apps tailored to your specific needs. From complex functionalities to intuitive interfaces,
-                            I ensure your application is both powerful and user-friendly.
-                        </p>
-                        <a href="#" class="read">Read More</a>
-                    </div>
-                    <div>
-                        <i class='bx bx-code-block' style='color:#00eeff'></i>
-                        <h2>Backend Development</h2>
-                        <p>Design and develop robust and scalable backend solutions for web applications. Leveraging
-                            technologies such as Node.js and Express, I build efficient server-side components, manage
-                            databases, and ensure seamless integration with frontend elements to deliver
-                            high-performance web applications.
-                        </p>
-                        <a href="#" class="read">Read More</a>
-                    </div>
+            <!-- <div class="container"> -->
+            <h1 class="heading">My <span>Services</span></h1>
+            <div class="services-list">
+                <div class="services-box">
+                    <i class="bx bx-code" style='color: #00eeff;'></i>
+                    <h2>Website Development</h2>
+                    <p>I offer comprehensive website development services, creating responsive and user-friendly
+                        websites that cater to your specific needs. From design to deployment, I ensure a seamless
+                        experience, leveraging the latest technologies and best practices to deliver high-quality,
+                        scalable websites.
+                    </p>
+                    <a href="#" class="btn-box">Read More</a>
+                </div>
+                <div class="services-box">
+                    <i class='bx bx-code-alt' style='color:#00eeff'></i>
+                    <h2>Frontend Development</h2>
+                    <p>Transform your ideas into dynamic web applications with seamless user experiences. Utilizing
+                        the latest technologies in front-end development, I build responsive and interactive web
+                        apps tailored to your specific needs. From complex functionalities to intuitive interfaces,
+                        I ensure your application is powerful.
+                    </p>
+                    <a href="#" class="btn-box">Read More</a>
+                </div>
+                <div class="services-box">
+                    <i class='bx bx-code-block' style='color:#00eeff'></i>
+                    <h2>Backend Development</h2>
+                    <p>Design and develop robust and scalable backend solutions for web applications. Leveraging
+                        technologies such as Node.js and Express, I build efficient server-side components, manage
+                        databases, and ensure seamless integration with frontend elements to deliver
+                        high-performance web applications.
+                    </p>
+                    <a href="#" class="btn-box">Read More</a>
                 </div>
             </div>
+            <!-- </div> -->
         </div>
     </section>
 
