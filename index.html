@@ -76,30 +76,27 @@
             <div class="services-box">
                 <i class="bx bx-code" style='color: #00eeff;'></i>
                 <h2>Website Development</h2>
-                <p>I offer comprehensive website development services, creating responsive and user-friendly
-                    websites that cater to your specific needs. From design to deployment, I ensure a seamless
-                    experience, leveraging the latest technologies and best practices to deliver high-quality,
-                    scalable websites.
+                <p>I provide end-to-end website development, crafting responsive and user-friendly sites tailored to
+                    your needs. From design to deployment, I ensure a seamless experience with the latest technologies
+                    for scalable, high-quality results.
                 </p>
                 <a href="#" class="btn-box">Read More</a>
             </div>
             <div class="services-box">
                 <i class='bx bx-code-alt' style='color:#00eeff'></i>
                 <h2>Frontend Development</h2>
-                <p>Transform your ideas into dynamic web applications with seamless user experiences. Utilizing
-                    the latest technologies in front-end development, I build responsive and interactive web
-                    apps tailored to your specific needs. From complex functionalities to intuitive interfaces,
-                    I ensure your application is powerful.
+                <p>Transform ideas into dynamic web apps with seamless user experiences. I build responsive, interactive
+                    applications using the latest front-end technologies, delivering powerful functionality and
+                    intuitive interfaces tailored to your needs.
                 </p>
                 <a href="#" class="btn-box">Read More</a>
             </div>
             <div class="services-box">
                 <i class='bx bx-code-block' style='color:#00eeff'></i>
                 <h2>Backend Development</h2>
-                <p>Design and develop robust and scalable backend solutions for web applications. Leveraging
-                    technologies such as Node.js and Express, I build efficient server-side components, manage
-                    databases, and ensure seamless integration with frontend elements to deliver
-                    high-performance web applications.
+                <p>Design and develop scalable backend solutions for web applications using Node.js and Express. I
+                    create efficient server-side components, manage databases, and ensure seamless integration with
+                    frontend for high-performance applications.
                 </p>
                 <a href="#" class="btn-box">Read More</a>
             </div>
@@ -173,16 +170,18 @@
     <section class="contact" id="contact">
         <h2 class="heading">Contact <span>Me!</span></h2>
 
-        <form action="#">
+        <form action="https://api.web3forms.com/submit" method="POST">
             <div class="input-box">
-                <input type="text" placeholder="Enter Full Name">
-                <input type="email" placeholder="Enter Email Address">
+                <input type="hidden" name="access_key" value="89158064-0627-43ce-a4a2-ca27a4b961d6">
+
+                <input type="text" name="name" placeholder="Enter Full Name">
+                <input type="email" name="email" placeholder="Enter Email Address">
             </div>
             <div class="input-box">
-                <input type="number" placeholder="Enter Mobile Number">
-                <input type="text" placeholder="Email Subject">
+                <input type="number" name="number" placeholder="Enter Mobile Number">
+                <input type="text" name="subject" placeholder="Email Subject">
             </div>
-            <textarea name="" id="" cols="20" rows="5" placeholder="Enter Your Message"></textarea>
+            <textarea name="message" name="message" cols="20" rows="5" placeholder="Enter Your Message"></textarea>
             <input type="submit" value="Send Message" class="btn-box">
 
         </form>
@@ -202,7 +201,10 @@
 
 
 
+    <script src="https://smtpjs.com/v3/smtp.js"></script>
+    <script>
 
+    </script>
     <script src="https://unpkg.com/scrollreveal"></script>
     <script src="main.js"></script>
 </body>
